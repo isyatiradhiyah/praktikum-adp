@@ -75,7 +75,8 @@ print("----------------------------------------")
 print("===========| STRUK BELANJA |============")
 for kode_barang, jumlah in daftar_belanja.items():
     print(f"{daftar_barang[kode_barang]['nama']} ({jumlah} pcs) : Rp{daftar_barang[kode_barang]['harga']*jumlah}")
-print(f"Total Diskon GAMIS : ", total_diskon)
+if total_diskon > 0:
+    print(f"Total Diskon GAMIS : ", total_diskon)
 print("========================================")
 print(f"Total Belanja            : Rp{total_belanja}")
 if diskon_akhir > 0:
